@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Neucha', sans-serif;
+}
+
+p{
+  font-size: 2rem;
+}
+
+h1{
+  font-size: 8rem;
+}
+
+h2{
+  font-size: 3.5rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color : #fff;
+}
+
+.app:before{
+  content: '';
+  background: url('./pictures/trees.jpg') no-repeat center center/cover;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container{
+  max-width: 700px;
+  height: 800px;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+  top: 10%; 
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top{
+  width: 100%;
+  margin: 1 rem auto;
+  background-color: rgba(255,255,255,0.3);
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.app .description{
+  margin: 1 rem auto;
+  position: relative;
+  right: -60%;
+}
+
+.app .bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 13px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.app .search{
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input{
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  color : #fff;
+  border-radius: 35px;
+  border: 1px solid rgba(255,255,255,0.9);
+  background: rgba(225,225,225,0.3);
+
+}
+
+::placeholder{
+  color: white;
+}
+
